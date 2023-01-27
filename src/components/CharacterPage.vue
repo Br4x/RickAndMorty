@@ -9,8 +9,8 @@ const character: Character = await res.json()
 
 <template>
   <div class="flex flex-col bg-gray-100 h-screen">
-    <div class="flex bg-white shadow">
-      <img class="object-cover w-96  shadow-lg h-96 mr-2" :src="character.image" alt="">
+    <div class="flex bg-white shadow flex-col sm:flex-row">
+      <img class="object-cover sm:w-96 h-64 shadow-lg sm:h-96 mr-2 w-full" :src="character.image" alt="">
       <div class="mb-6 text-left p-6">
         <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
           {{ character.name }}
